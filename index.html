@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#09090b" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Music Assistant" />
+  <link id="dynamic-favicon" rel="icon" type="image/svg+xml" href="" />
+  <link id="dynamic-apple-icon" rel="apple-touch-icon" sizes="512x512" href="" />
+  <link id="dynamic-manifest" rel="manifest" href="" />
+  <title>Music Assistant • Điều khiển Hi-Fi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS 3.4.17, dựng sẵn (không tải script từ CDN) -->
+  <style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.-right-24{right:-6rem}.-top-24{top:-6rem}.bottom-2{bottom:.5rem}.left-1\/2{left:50%}.left-3\.5{left:.875rem}.right-1\.5{right:.375rem}.right-2{right:.5rem}.top-1\.5{top:.375rem}.top-4{top:1rem}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.ml-0\.5{margin-left:.125rem}.mr-1\.5{margin-right:.375rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:.375rem}.h-11{height:2.75rem}.h-14{height:3.5rem}.h-2{height:.5rem}.h-24{height:6rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-64{height:16rem}.h-8{height:2rem}.h-full{height:100%}.min-h-\[290px\]{min-height:290px}.min-h-screen{min-height:100vh}.w-0\.5{width:.125rem}.w-1\.5{width:.375rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-14{width:3.5rem}.w-2{width:.5rem}.w-24{width:6rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-\[90\%\]{width:90%}.w-full{width:100%}.min-w-0{min-width:0}.max-w-2xl{max-width:42rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:.125rem}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-zinc-100>:not([hidden])~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(244 244 245/var(--tw-divide-opacity,1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[14px\]{border-radius:14px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.rounded-t-xl{border-top-left-radius:.75rem;border-top-right-radius:.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-cyan-400{--tw-border-opacity:1;border-color:rgb(34 211 238/var(--tw-border-opacity,1))}.border-cyan-500\/25{border-color:rgba(6,182,212,.25)}.border-emerald-500{--tw-border-opacity:1;border-color:rgb(16 185 129/var(--tw-border-opacity,1))}.border-rose-500{--tw-border-opacity:1;border-color:rgb(244 63 94/var(--tw-border-opacity,1))}.border-transparent{border-color:transparent}.border-zinc-100{--tw-border-opacity:1;border-color:rgb(244 244 245/var(--tw-border-opacity,1))}.border-zinc-200{--tw-border-opacity:1;border-color:rgb(228 228 231/var(--tw-border-opacity,1))}.border-zinc-200\/50{border-color:hsla(240,6%,90%,.5)}.border-zinc-200\/70{border-color:hsla(240,6%,90%,.7)}.border-zinc-200\/80{border-color:hsla(240,6%,90%,.8)}.border-zinc-700{--tw-border-opacity:1;border-color:rgb(63 63 70/var(--tw-border-opacity,1))}.border-zinc-900{--tw-border-opacity:1;border-color:rgb(24 24 27/var(--tw-border-opacity,1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11/var(--tw-bg-opacity,1))}.bg-amber-500\/15{background-color:rgba(245,158,11,.15)}.bg-bg-light{--tw-bg-opacity:1;background-color:rgb(244 244 246/var(--tw-bg-opacity,1))}.bg-black\/60{background-color:rgba(0,0,0,.6)}.bg-black\/65{background-color:rgba(0,0,0,.65)}.bg-cyan-400{--tw-bg-opacity:1;background-color:rgb(34 211 238/var(--tw-bg-opacity,1))}.bg-cyan-500\/10{background-color:rgba(6,182,212,.1)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.bg-emerald-500\/10{background-color:rgba(16,185,129,.1)}.bg-emerald-500\/15{background-color:rgba(16,185,129,.15)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity,1))}.bg-fuchsia-400{--tw-bg-opacity:1;background-color:rgb(232 121 249/var(--tw-bg-opacity,1))}.bg-indigo-400{--tw-bg-opacity:1;background-color:rgb(129 140 248/var(--tw-bg-opacity,1))}.bg-rose-500{--tw-bg-opacity:1;background-color:rgb(244 63 94/var(--tw-bg-opacity,1))}.bg-rose-500\/15{background-color:rgba(244,63,94,.15)}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72/var(--tw-bg-opacity,1))}.bg-sky-500{--tw-bg-opacity:1;background-color:rgb(14 165 233/var(--tw-bg-opacity,1))}.bg-sky-500\/15{background-color:rgba(14,165,233,.15)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-zinc-100{--tw-bg-opacity:1;background-color:rgb(244 244 245/var(--tw-bg-opacity,1))}.bg-zinc-200{--tw-bg-opacity:1;background-color:rgb(228 228 231/var(--tw-bg-opacity,1))}.bg-zinc-300{--tw-bg-opacity:1;background-color:rgb(212 212 216/var(--tw-bg-opacity,1))}.bg-zinc-400\/50{background-color:hsla(240,5%,65%,.5)}.bg-zinc-50{--tw-bg-opacity:1;background-color:rgb(250 250 250/var(--tw-bg-opacity,1))}.bg-zinc-50\/50{background-color:hsla(0,0%,98%,.5)}.bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27/var(--tw-bg-opacity,1))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right,var(--tw-gradient-stops))}.from-cyan-400{--tw-gradient-from:#22d3ee var(--tw-gradient-from-position);--tw-gradient-to:rgba(34,211,238,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-cyan-500{--tw-gradient-from:#06b6d4 var(--tw-gradient-from-position);--tw-gradient-to:rgba(6,182,212,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-cyan-500\/15{--tw-gradient-from:rgba(6,182,212,.15) var(--tw-gradient-from-position);--tw-gradient-to:rgba(6,182,212,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-indigo-400{--tw-gradient-to:rgba(129,140,248,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#818cf8 var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-fuchsia-500{--tw-gradient-to:#d946ef var(--tw-gradient-to-position)}.to-fuchsia-500\/15{--tw-gradient-to:rgba(217,70,239,.15) var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{-o-object-fit:cover;object-fit:cover}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-3\.5{padding:.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-8{padding:2rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pl-10{padding-left:2.5rem}.pr-20{padding-right:5rem}.pt-1{padding-top:.25rem}.pt-2{padding-top:.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.font-sans{font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tracking-tight{letter-spacing:-.025em}.tracking-wider{letter-spacing:.05em}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6/var(--tw-text-opacity,1))}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238/var(--tw-text-opacity,1))}.text-cyan-600{--tw-text-opacity:1;color:rgb(8 145 178/var(--tw-text-opacity,1))}.text-cyan-700{--tw-text-opacity:1;color:rgb(14 116 144/var(--tw-text-opacity,1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129/var(--tw-text-opacity,1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105/var(--tw-text-opacity,1))}.text-rose-500{--tw-text-opacity:1;color:rgb(244 63 94/var(--tw-text-opacity,1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72/var(--tw-text-opacity,1))}.text-sky-600{--tw-text-opacity:1;color:rgb(2 132 199/var(--tw-text-opacity,1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.text-zinc-400{--tw-text-opacity:1;color:rgb(161 161 170/var(--tw-text-opacity,1))}.text-zinc-500{--tw-text-opacity:1;color:rgb(113 113 122/var(--tw-text-opacity,1))}.text-zinc-600{--tw-text-opacity:1;color:rgb(82 82 91/var(--tw-text-opacity,1))}.text-zinc-700{--tw-text-opacity:1;color:rgb(63 63 70/var(--tw-text-opacity,1))}.text-zinc-900{--tw-text-opacity:1;color:rgb(24 24 27/var(--tw-text-opacity,1))}.text-zinc-950{--tw-text-opacity:1;color:rgb(9 9 11/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.accent-cyan-400{accent-color:#22d3ee}.opacity-40{opacity:.4}.opacity-80{opacity:.8}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.shadow-2xl,.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-md,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-cyan-500\/20{--tw-shadow-color:rgba(6,182,212,.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-cyan-500\/25{--tw-shadow-color:rgba(6,182,212,.25);--tw-shadow:var(--tw-shadow-colored)}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-white\/15{--tw-ring-color:hsla(0,0%,100%,.15)}.blur{--tw-blur:blur(8px)}.blur,.blur-3xl{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-3xl{--tw-blur:blur(64px)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-150,.transition-transform{transition-duration:.15s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.duration-700{transition-duration:.7s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.selection\:bg-cyan-500\/30 ::-moz-selection{background-color:rgba(6,182,212,.3)}.selection\:bg-cyan-500\/30 ::selection{background-color:rgba(6,182,212,.3)}.selection\:bg-cyan-500\/30::-moz-selection{background-color:rgba(6,182,212,.3)}.selection\:bg-cyan-500\/30::selection{background-color:rgba(6,182,212,.3)}.after\:absolute:after{content:var(--tw-content);position:absolute}.after\:left-\[2px\]:after{content:var(--tw-content);left:2px}.after\:top-\[2px\]:after{content:var(--tw-content);top:2px}.after\:h-4:after{content:var(--tw-content);height:1rem}.after\:w-4:after{content:var(--tw-content);width:1rem}.after\:rounded-full:after{content:var(--tw-content);border-radius:9999px}.after\:bg-white:after{content:var(--tw-content);--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.after\:transition-all:after{content:var(--tw-content);transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.after\:content-\[\'\'\]:after{--tw-content:"";content:var(--tw-content)}.hover\:border-cyan-500\/50:hover{border-color:rgba(6,182,212,.5)}.hover\:border-zinc-300:hover{--tw-border-opacity:1;border-color:rgb(212 212 216/var(--tw-border-opacity,1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.hover\:bg-zinc-100:hover{--tw-bg-opacity:1;background-color:rgb(244 244 245/var(--tw-bg-opacity,1))}.hover\:bg-zinc-100\/80:hover{background-color:hsla(240,5%,96%,.8)}.hover\:bg-zinc-200\/70:hover{background-color:hsla(240,6%,90%,.7)}.hover\:text-cyan-400:hover{--tw-text-opacity:1;color:rgb(34 211 238/var(--tw-text-opacity,1))}.hover\:text-zinc-700:hover{--tw-text-opacity:1;color:rgb(63 63 70/var(--tw-text-opacity,1))}.hover\:text-zinc-800:hover{--tw-text-opacity:1;color:rgb(39 39 42/var(--tw-text-opacity,1))}.hover\:text-zinc-900:hover{--tw-text-opacity:1;color:rgb(24 24 27/var(--tw-text-opacity,1))}.hover\:text-zinc-950:hover{--tw-text-opacity:1;color:rgb(9 9 11/var(--tw-text-opacity,1))}.hover\:opacity-95:hover{opacity:.95}.focus\:border-cyan-400:focus{--tw-border-opacity:1;border-color:rgb(34 211 238/var(--tw-border-opacity,1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129/var(--tw-text-opacity,1))}.peer:checked~.peer-checked\:bg-cyan-400{--tw-bg-opacity:1;background-color:rgb(34 211 238/var(--tw-bg-opacity,1))}.peer:checked~.peer-checked\:after\:translate-x-full:after{content:var(--tw-content);--tw-translate-x:100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.peer:checked~.peer-checked\:after\:border-white:after{content:var(--tw-content);--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity,1))}.peer:focus~.peer-focus\:outline-none{outline:2px solid transparent;outline-offset:2px}.dark\:block:is(.dark *){display:block}.dark\:hidden:is(.dark *){display:none}.dark\:divide-zinc-800\/60:is(.dark *)>:not([hidden])~:not([hidden]){border-color:rgba(39,39,42,.6)}.dark\:border-zinc-100:is(.dark *){--tw-border-opacity:1;border-color:rgb(244 244 245/var(--tw-border-opacity,1))}.dark\:border-zinc-700:is(.dark *){--tw-border-opacity:1;border-color:rgb(63 63 70/var(--tw-border-opacity,1))}.dark\:border-zinc-700\/50:is(.dark *){border-color:rgba(63,63,70,.5)}.dark\:border-zinc-700\/70:is(.dark *){border-color:rgba(63,63,70,.7)}.dark\:border-zinc-800:is(.dark *){--tw-border-opacity:1;border-color:rgb(39 39 42/var(--tw-border-opacity,1))}.dark\:border-zinc-800\/80:is(.dark *){border-color:rgba(39,39,42,.8)}.dark\:border-zinc-800\/90:is(.dark *){border-color:rgba(39,39,42,.9)}.dark\:bg-bg-dark:is(.dark *){--tw-bg-opacity:1;background-color:rgb(9 9 11/var(--tw-bg-opacity,1))}.dark\:bg-surface-dark:is(.dark *){--tw-bg-opacity:1;background-color:rgb(18 18 21/var(--tw-bg-opacity,1))}.dark\:bg-zinc-100:is(.dark *){--tw-bg-opacity:1;background-color:rgb(244 244 245/var(--tw-bg-opacity,1))}.dark\:bg-zinc-700:is(.dark *){--tw-bg-opacity:1;background-color:rgb(63 63 70/var(--tw-bg-opacity,1))}.dark\:bg-zinc-800:is(.dark *){--tw-bg-opacity:1;background-color:rgb(39 39 42/var(--tw-bg-opacity,1))}.dark\:bg-zinc-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(24 24 27/var(--tw-bg-opacity,1))}.dark\:bg-zinc-900\/40:is(.dark *){background-color:rgba(24,24,27,.4)}.dark\:text-amber-400:is(.dark *){--tw-text-opacity:1;color:rgb(251 191 36/var(--tw-text-opacity,1))}.dark\:text-cyan-300:is(.dark *){--tw-text-opacity:1;color:rgb(103 232 249/var(--tw-text-opacity,1))}.dark\:text-cyan-400:is(.dark *){--tw-text-opacity:1;color:rgb(34 211 238/var(--tw-text-opacity,1))}.dark\:text-emerald-400:is(.dark *){--tw-text-opacity:1;color:rgb(52 211 153/var(--tw-text-opacity,1))}.dark\:text-rose-400:is(.dark *){--tw-text-opacity:1;color:rgb(251 113 133/var(--tw-text-opacity,1))}.dark\:text-sky-400:is(.dark *){--tw-text-opacity:1;color:rgb(56 189 248/var(--tw-text-opacity,1))}.dark\:text-white:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.dark\:text-zinc-100:is(.dark *){--tw-text-opacity:1;color:rgb(244 244 245/var(--tw-text-opacity,1))}.dark\:text-zinc-200:is(.dark *){--tw-text-opacity:1;color:rgb(228 228 231/var(--tw-text-opacity,1))}.dark\:text-zinc-300:is(.dark *){--tw-text-opacity:1;color:rgb(212 212 216/var(--tw-text-opacity,1))}.dark\:text-zinc-400:is(.dark *){--tw-text-opacity:1;color:rgb(161 161 170/var(--tw-text-opacity,1))}.dark\:text-zinc-500:is(.dark *){--tw-text-opacity:1;color:rgb(113 113 122/var(--tw-text-opacity,1))}.dark\:text-zinc-900:is(.dark *){--tw-text-opacity:1;color:rgb(24 24 27/var(--tw-text-opacity,1))}.dark\:hover\:border-zinc-700:hover:is(.dark *){--tw-border-opacity:1;border-color:rgb(63 63 70/var(--tw-border-opacity,1))}.dark\:hover\:bg-zinc-700\/70:hover:is(.dark *){background-color:rgba(63,63,70,.7)}.dark\:hover\:bg-zinc-800:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(39 39 42/var(--tw-bg-opacity,1))}.dark\:hover\:bg-zinc-800\/50:hover:is(.dark *){background-color:rgba(39,39,42,.5)}.dark\:hover\:bg-zinc-800\/80:hover:is(.dark *){background-color:rgba(39,39,42,.8)}.dark\:hover\:text-white:hover:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.dark\:hover\:text-zinc-200:hover:is(.dark *){--tw-text-opacity:1;color:rgb(228 228 231/var(--tw-text-opacity,1))}@media (min-width:640px){.sm\:inline{display:inline}.sm\:h-28{height:7rem}.sm\:w-28{width:7rem}.sm\:gap-5{gap:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}</style>
+  <style>
+    /* Custom subtle scrollbars & range slider styling */
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+      height: 5px;
+      border-radius: 999px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #22d3ee, #d946ef);
+      margin-top: -4.5px;
+      box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.25);
+      transition: transform 0.15s ease;
+    }
+
+    input[type="range"]:active::-webkit-slider-thumb {
+      transform: scale(1.2);
+    }
+
+    .neon-glow-card {
+      box-shadow: 0 10px 30px -10px rgba(34, 211, 238, 0.12), 0 4px 20px -5px rgba(217, 70, 239, 0.1);
+    }
+
+    @keyframes pulseEq {
+      0%, 100% { height: 25%; }
+      50% { height: 100%; }
+    }
+    .eq-bar-1 { animation: pulseEq 0.9s ease-in-out infinite; }
+    .eq-bar-2 { animation: pulseEq 0.65s ease-in-out infinite 0.15s; }
+    .eq-bar-3 { animation: pulseEq 0.8s ease-in-out infinite 0.3s; }
+  </style>
+</head>
+<body class="bg-bg-light dark:bg-bg-dark text-zinc-900 dark:text-zinc-100 font-sans antialiased min-h-screen flex flex-col selection:bg-cyan-500/30">
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="fixed top-4 left-1/2 -translate-x-1/2 z-50 flex flex-col gap-2 pointer-events-none w-[90%] max-w-sm"></div>
+
+  <!-- Main App Shell -->
+  <div class="w-full max-w-2xl mx-auto flex-1 flex flex-col px-4 py-4 sm:py-6 gap-4">
+
+    <!-- Top Header: Brand, Connection Status, Theme & Settings -->
+    <header class="flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <!-- Custom Neon Music Note & Soundwave Squircle Logo -->
+        <div class="relative w-11 h-11 rounded-[14px] overflow-hidden shrink-0 shadow-lg shadow-cyan-500/20 ring-1 ring-white/15 group cursor-pointer" id="brand-logo-btn" title="Nhấn để tải icon ứng dụng (PNG 512x512)">
+          <svg class="w-full h-full" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bgGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#0b132b"/>
+                <stop offset="50%" stop-color="#130f26"/>
+                <stop offset="100%" stop-color="#1c0d29"/>
+              </linearGradient>
+              <linearGradient id="neonGrad" x1="18" y1="22" x2="102" y2="98" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#22d3ee"/>
+                <stop offset="50%" stop-color="#818cf8"/>
+                <stop offset="100%" stop-color="#e879f9"/>
+              </linearGradient>
+              <filter id="neonBlur" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="3.2" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+            <!-- Squircle Dark Backdrop & Glowing Border -->
+            <rect x="2" y="2" width="116" height="116" rx="28" fill="url(#bgGrad)" stroke="url(#neonGrad)" stroke-width="2.5"/>
+            <!-- Subtle Orbit Ring -->
+            <circle cx="60" cy="60" r="37" stroke="url(#neonGrad)" stroke-width="1" stroke-dasharray="4 4" opacity="0.45"/>
+            <!-- Equalizer Soundwaves -->
+            <g stroke="url(#neonGrad)" stroke-width="2.6" stroke-linecap="round" opacity="0.85">
+              <line x1="20" y1="56" x2="20" y2="64"/>
+              <line x1="26" y1="49" x2="26" y2="71"/>
+              <line x1="32" y1="43" x2="32" y2="77"/>
+              <line x1="54" y1="52" x2="54" y2="68"/>
+              <line x1="60" y1="48" x2="60" y2="72"/>
+              <line x1="66" y1="53" x2="66" y2="67"/>
+              <line x1="88" y1="45" x2="88" y2="75"/>
+              <line x1="94" y1="51" x2="94" y2="69"/>
+              <line x1="100" y1="56" x2="100" y2="64"/>
+            </g>
+            <!-- Glowing Double Music Note -->
+            <g filter="url(#neonBlur)">
+              <path d="M47 78V39.5L78 32V70.5" stroke="url(#neonGrad)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M47 47L78 39.5" stroke="url(#neonGrad)" stroke-width="4.5" stroke-linecap="round"/>
+              <ellipse cx="40.5" cy="79.5" rx="9" ry="7.2" transform="rotate(-18 40.5 79.5)" fill="#0b132b" stroke="#22d3ee" stroke-width="4.5"/>
+              <ellipse cx="71.5" cy="72" rx="9" ry="7.2" transform="rotate(-18 71.5 72)" fill="#0b132b" stroke="#e879f9" stroke-width="4.5"/>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-sm font-semibold tracking-tight">Music Assistant</h1>
+            <span id="connection-badge" class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-medium bg-amber-500/15 text-amber-600 dark:text-amber-400">
+              <span id="status-dot" class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+              <span id="status-text">Chế độ Demo</span>
+            </span>
+          </div>
+          <p id="mode-subtitle" class="text-[11px] text-zinc-500 dark:text-zinc-400">Trình phát Hi-Fi tối giản</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-1.5">
+        <!-- Download App Icon Button -->
+        <button id="btn-download-icon" title="Tải icon App (PNG 512x512)" class="p-2.5 rounded-xl bg-white dark:bg-surface-dark border border-zinc-200/80 dark:border-zinc-800 hover:border-cyan-500/50 text-zinc-600 dark:text-zinc-300 transition">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button id="btn-theme" title="Đổi giao diện Sáng/Tối" class="p-2.5 rounded-xl bg-white dark:bg-surface-dark border border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 text-zinc-600 dark:text-zinc-300 transition">
+          <svg id="icon-sun" class="w-4 h-4 hidden dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
+          <svg id="icon-moon" class="w-4 h-4 block dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+
+        <!-- Settings Button -->
+        <button id="btn-open-settings" title="Cài đặt kết nối" class="flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-white dark:bg-surface-dark border border-zinc-200/80 dark:border-zinc-800 hover:border-cyan-500/50 text-xs font-medium text-zinc-700 dark:text-zinc-200 transition">
+          <svg class="w-4 h-4 text-zinc-500 dark:text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          <span class="hidden sm:inline">Kết nối</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Zone / Speaker Horizontal Pill Selector -->
+    <section aria-label="Chọn vùng phát nhạc" class="flex items-center gap-2">
+      <div id="zone-selector" class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 flex-1">
+        <!-- Populated dynamically via JS -->
+      </div>
+      <button id="btn-refresh" title="Làm mới danh sách loa" class="shrink-0 p-2 rounded-xl bg-white dark:bg-surface-dark border border-zinc-200/80 dark:border-zinc-800 text-zinc-500 hover:text-cyan-400 transition">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/>
+        </svg>
+      </button>
+    </section>
+
+    <!-- Now Playing Compact Hi-Fi Card -->
+    <main class="relative overflow-hidden rounded-3xl bg-white dark:bg-surface-dark border border-zinc-200/80 dark:border-zinc-800/90 neon-glow-card p-5 sm:p-6 transition-all">
+      <!-- Subtle Neon Ambient Blur Backdrop -->
+      <div id="ambient-glow" class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-gradient-to-tr from-cyan-500/15 to-fuchsia-500/15 blur-3xl pointer-events-none transition-opacity duration-700"></div>
+
+      <div class="relative z-10 flex flex-col gap-5">
+        <!-- Top Row: Artwork + Track Metadata -->
+        <div class="flex items-center gap-4 sm:gap-5">
+          <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-800 shrink-0 shadow-md border border-zinc-200/50 dark:border-zinc-700/50">
+            <img id="np-artwork" src="https://placehold.co/300x300/18181b/22d3ee?text=Hi-Fi" alt="Album Artwork" class="w-full h-full object-cover transition-transform duration-500" onerror="this.src='https://placehold.co/300x300/18181b/22d3ee?text=Music'" />
+            <!-- Playing Equalizer Overlay -->
+            <div id="np-eq-overlay" class="hidden absolute bottom-2 right-2 px-1.5 py-1 rounded-md bg-black/65 backdrop-blur-sm flex items-end gap-0.5 h-5">
+              <span class="w-0.5 bg-cyan-400 rounded-full eq-bar-1"></span>
+              <span class="w-0.5 bg-indigo-400 rounded-full eq-bar-2"></span>
+              <span class="w-0.5 bg-fuchsia-400 rounded-full eq-bar-3"></span>
+            </div>
+          </div>
+
+          <div class="min-w-0 flex-1 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-[11px] font-semibold uppercase tracking-wider bg-gradient-to-r from-cyan-500 to-fuchsia-500 bg-clip-text text-transparent">Đang phát</span>
+              <span id="np-quality" class="px-1.5 py-0.5 rounded text-[10px] font-mono font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-200/70 dark:border-zinc-700/70">
+                FLAC 24-bit/96kHz
+              </span>
+            </div>
+            <h2 id="np-title" class="text-lg sm:text-xl font-bold tracking-tight truncate text-zinc-900 dark:text-white">
+              Midnight City Reflections
+            </h2>
+            <p id="np-artist" class="text-sm font-medium text-zinc-600 dark:text-zinc-300 truncate mt-0.5">
+              Nils Frahm
+            </p>
+            <p id="np-album" class="text-xs text-zinc-400 dark:text-zinc-500 truncate mt-0.5">
+              Spaces • Qobuz Hi-Res
+            </p>
+          </div>
+        </div>
+
+        <!-- Seek / Progress Slider -->
+        <div class="flex flex-col gap-1.5">
+          <input id="seek-slider" type="range" min="0" max="100" value="35" aria-label="Tua thời gian bài hát" class="w-full accent-cyan-400" />
+          <div class="flex items-center justify-between text-[11px] font-mono text-zinc-500 dark:text-zinc-400">
+            <span id="time-elapsed">01:42</span>
+            <span id="time-remaining">-03:10</span>
+          </div>
+        </div>
+
+        <!-- Transport Controls -->
+        <div class="flex items-center justify-between max-w-sm mx-auto w-full pt-1">
+          <!-- Shuffle -->
+          <button id="btn-shuffle" title="Phát ngẫu nhiên" class="p-2.5 rounded-xl text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"/><path d="m18 2 4 4-4 4"/><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"/><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"/><path d="m18 14 4 4-4 4"/>
+            </svg>
+          </button>
+
+          <!-- Previous -->
+          <button id="btn-prev" title="Bài trước" class="p-3 rounded-2xl text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 active:scale-95 transition">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/>
+            </svg>
+          </button>
+
+          <!-- Play / Pause (Prominent Neon Gradient) -->
+          <button id="btn-play-pause" title="Phát / Tạm dừng" class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-400 via-indigo-400 to-fuchsia-500 hover:opacity-95 text-zinc-950 flex items-center justify-center shadow-lg shadow-cyan-500/25 active:scale-95 transition">
+            <svg id="icon-play" class="w-6 h-6 ml-0.5 hidden" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            <svg id="icon-pause" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+          </button>
+
+          <!-- Next -->
+          <button id="btn-next" title="Bài tiếp theo" class="p-3 rounded-2xl text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 active:scale-95 transition">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+            </svg>
+          </button>
+
+          <!-- Repeat -->
+          <button id="btn-repeat" title="Lặp lại" class="p-2.5 rounded-xl text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition relative">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/>
+            </svg>
+            <span id="repeat-badge" class="hidden absolute top-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+          </button>
+        </div>
+
+        <!-- Volume Control Bar -->
+        <div class="flex items-center gap-3 pt-2 border-t border-zinc-100 dark:border-zinc-800/80">
+          <button id="btn-mute" title="Tắt / Bật tiếng" class="p-2 rounded-xl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition">
+            <svg id="icon-vol-on" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+            </svg>
+            <svg id="icon-vol-mute" class="w-4 h-4 hidden text-rose-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+            </svg>
+          </button>
+          <input id="volume-slider" type="range" min="0" max="100" value="48" aria-label="Âm lượng" class="flex-1 accent-cyan-400" />
+          <span id="volume-label" class="w-9 text-right text-xs font-mono font-medium text-zinc-500 dark:text-zinc-400">48%</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Library, Queue & Search Section -->
+    <section class="flex-1 flex flex-col rounded-3xl bg-white dark:bg-surface-dark border border-zinc-200/80 dark:border-zinc-800/90 shadow-sm overflow-hidden min-h-[290px]">
+      <!-- Navigation Tabs -->
+      <div class="flex items-center border-b border-zinc-100 dark:border-zinc-800/80 px-2 pt-2 gap-1 overflow-x-auto no-scrollbar">
+        <button data-tab="queue" class="tab-btn active px-3.5 py-2.5 text-xs font-semibold rounded-t-xl border-b-2 border-cyan-400 text-cyan-600 dark:text-cyan-400 whitespace-nowrap transition">
+          Hàng đợi
+        </button>
+        <button data-tab="playlists" class="tab-btn px-3.5 py-2.5 text-xs font-medium rounded-t-xl border-b-2 border-transparent text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 whitespace-nowrap transition">
+          Danh sách phát
+        </button>
+        <button data-tab="albums" class="tab-btn px-3.5 py-2.5 text-xs font-medium rounded-t-xl border-b-2 border-transparent text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 whitespace-nowrap transition">
+          Albums
+        </button>
+        <button data-tab="artists" class="tab-btn px-3.5 py-2.5 text-xs font-medium rounded-t-xl border-b-2 border-transparent text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 whitespace-nowrap transition">
+          Nghệ sĩ
+        </button>
+        <button data-tab="tracks" class="tab-btn px-3.5 py-2.5 text-xs font-medium rounded-t-xl border-b-2 border-transparent text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 whitespace-nowrap transition">
+          Yêu thích
+        </button>
+        <button data-tab="search" class="tab-btn px-3.5 py-2.5 text-xs font-medium rounded-t-xl border-b-2 border-transparent text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 whitespace-nowrap transition flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+          </svg>
+          Tìm kiếm
+        </button>
+      </div>
+
+      <!-- Search Input Bar (Visible when Search tab active) -->
+      <div id="search-bar-wrapper" class="hidden p-3 border-b border-zinc-100 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/40">
+        <div class="relative flex items-center">
+          <svg class="w-4 h-4 text-zinc-400 absolute left-3.5 pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input id="search-input" type="text" placeholder="Tìm bài hát, nghệ sĩ, album trên Music Assistant..." class="w-full pl-10 pr-20 py-2.5 rounded-xl text-xs bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:border-cyan-400 text-zinc-900 dark:text-zinc-100" />
+          <button id="btn-search-submit" class="absolute right-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-zinc-950 text-[11px] font-semibold transition">
+            Tìm
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic List Content -->
+      <div id="tab-content" class="flex-1 overflow-y-auto divide-y divide-zinc-100 dark:divide-zinc-800/60 p-2">
+        <!-- Populated dynamically via JS -->
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Connection Settings Modal -->
+  <div id="settings-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+    <div class="w-full max-w-md rounded-3xl bg-white dark:bg-surface-dark border border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-zinc-100 dark:border-zinc-800">
+        <div>
+          <h3 class="text-base font-bold">Cài đặt kết nối</h3>
+          <p class="text-xs text-zinc-500 dark:text-zinc-400">Kết nối Music Assistant hoặc Home Assistant</p>
+        </div>
+        <button id="btn-close-settings" class="p-2 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <form id="settings-form" class="p-5 flex flex-col gap-4">
+        <!-- Demo Mode Toggle -->
+        <div class="flex items-center justify-between p-3.5 rounded-2xl bg-cyan-500/10 border border-cyan-500/25">
+          <div>
+            <p class="text-xs font-semibold text-cyan-700 dark:text-cyan-300">Chế độ Demo (Xem trước)</p>
+            <p class="text-[11px] text-zinc-500 dark:text-zinc-400">Dùng dữ liệu mô phỏng để trải nghiệm ngay</p>
+          </div>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input id="cfg-demo" type="checkbox" class="sr-only peer" checked />
+            <div class="w-10 h-5 bg-zinc-300 dark:bg-zinc-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-cyan-400"></div>
+          </label>
+        </div>
+
+        <!-- Connection Mode Selector -->
+        <div class="flex flex-col gap-1.5">
+          <label class="text-xs font-semibold text-zinc-700 dark:text-zinc-300">Giao thức kết nối</label>
+          <div class="grid grid-cols-2 gap-2">
+            <button type="button" data-conn-mode="ma" class="conn-mode-btn px-3 py-2.5 rounded-xl border text-xs font-medium text-left transition border-cyan-400 bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">
+              <div class="font-semibold">Music Assistant</div>
+              <div class="text-[10px] opacity-80">Trực tiếp WS (:8095)</div>
+            </button>
+            <button type="button" data-conn-mode="ha" class="conn-mode-btn px-3 py-2.5 rounded-xl border text-xs font-medium text-left transition border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400">
+              <div class="font-semibold">Home Assistant</div>
+              <div class="text-[10px] opacity-80">HA WebSocket (:8123)</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Music Assistant Fields -->
+        <div id="fields-ma" class="flex flex-col gap-3">
+          <div>
+            <label for="cfg-ma-url" class="block text-xs font-medium text-zinc-600 dark:text-zinc-400 mb-1">Địa chỉ WebSocket Music Assistant</label>
+            <input id="cfg-ma-url" type="text" placeholder="ws://&lt;IP-máy-chủ-MA&gt;:8095/ws" class="w-full px-3.5 py-2.5 rounded-xl text-xs font-mono bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:border-cyan-400" />
+            <p class="text-[11px] text-zinc-400 mt-1">Lưu ý: Nếu mở trang qua HTTPS, trình duyệt yêu cầu dùng <code class="text-cyan-400">wss://</code> hoặc mở file cục bộ.</p>
+          </div>
+          <div>
+            <label for="cfg-ma-user" class="block text-xs font-medium text-zinc-600 dark:text-zinc-400 mb-1">Tên đăng nhập Music Assistant</label>
+            <input id="cfg-ma-user" type="text" placeholder="Tên đăng nhập" autocomplete="username" autocapitalize="off" spellcheck="false" class="w-full px-3.5 py-2.5 rounded-xl text-xs font-mono bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:border-cyan-400" />
+          </div>
+          <div>
+            <label for="cfg-ma-pass" class="block text-xs font-medium text-zinc-600 dark:text-zinc-400 mb-1">Mật khẩu (chỉ dùng để lấy token, không lưu)</label>
+            <input id="cfg-ma-pass" type="password" autocomplete="current-password" class="w-full px-3.5 py-2.5 rounded-xl text-xs font-mono bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:border-cyan-400" />
+          </div>
+          <div>
+            <label for="cfg-ma-token" class="block text-xs font-medium text-zinc-600 dark:text-zinc-400 mb-1">Hoặc dán token (tự điền sau khi đăng nhập bằng mật khẩu)</label>
+            <input id="cfg-ma-token" type="password" placeholder="Tạo trong MA: Cài đặt → Hồ sơ → Long-lived tokens" autocomplete="off" class="w-full px-3.5 py-2.5 rounded-xl text-xs font-mono bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:border-cyan-400" />
+          </div>
+        </div>
+
+        <!-- Home Assistant Fields -->
+        <div id="fields-ha" class="hidden flex-col gap-3">
+          <div>
+            <label for="cfg-ha-url" class="block text-xs font-medium text-zinc-600 dark:text-zinc-400 mb-1">Địa chỉ WebSocket Home Assistant</label>
+            <input id="cfg-ha-url" type="text" placeholder="ws://homeassistant.local:8123/api/websocket" class="w-full px-3.5 py-2.5 rounded-xl text-xs font-mono bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:border-cyan-400" />
+          </div>
+          <div>
+            <label for="cfg-ha-token" class="block text-xs font-medium text-zinc-600 dark:text-zinc-400 mb-1">Long-Lived Access Token</label>
+            <input id="cfg-ha-token" type="password" placeholder="Long-lived access token của Home Assistant" class="w-full px-3.5 py-2.5 rounded-xl text-xs font-mono bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 focus:outline-none focus:border-cyan-400" />
+          </div>
+        </div>
+
+        <div class="flex items-center justify-end gap-2 pt-2">
+          <button type="button" id="btn-cancel-settings" class="px-4 py-2.5 rounded-xl text-xs font-medium text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition">
+            Hủy
+          </button>
+          <button type="submit" class="px-5 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-zinc-950 shadow-md shadow-cyan-500/20 transition">
+            Lưu & Kết nối
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    /**
+     * Music Assistant & Home Assistant Minimalist Hi-Fi Web Controller
+     * Includes dynamic Neon Music Note & Soundwave App Icon generator (Favicon, Apple Touch Icon, PWA Manifest & PNG Download)
+     */
+
+    // --- Dynamic Neon App Icon Generator (SVG -> 512x512 PNG Canvas -> Favicon / Apple Touch Icon / PWA Manifest) ---
+    let generatedIconPngUrl = null;
+
+    function buildNeonAppIconSVG(size = 512) {
+      return `
+        <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 512 512">
+          <defs>
+            <linearGradient id="iconBg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#070d1f"/>
+              <stop offset="50%" stop-color="#110c24"/>
+              <stop offset="100%" stop-color="#1d092b"/>
+            </linearGradient>
+            <linearGradient id="neonMain" x1="80" y1="90" x2="432" y2="422" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#22d3ee"/>
+              <stop offset="48%" stop-color="#818cf8"/>
+              <stop offset="100%" stop-color="#e879f9"/>
+            </linearGradient>
+            <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28"/>
+              <stop offset="60%" stop-color="#c084fc" stop-opacity="0.12"/>
+              <stop offset="100%" stop-color="#070d1f" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="glowStrong" x="-25%" y="-25%" width="150%" height="150%">
+              <feGaussianBlur stdDeviation="12" result="blur1"/>
+              <feGaussianBlur stdDeviation="4" result="blur2"/>
+              <feMerge>
+                <feMergeNode in="blur1"/>
+                <feMergeNode in="blur2"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- Squircle App Container -->
+          <rect x="16" y="16" width="480" height="480" rx="116" fill="url(#iconBg)" stroke="url(#neonMain)" stroke-width="10"/>
+          <circle cx="256" cy="256" r="210" fill="url(#centerGlow)"/>
+
+          <!-- Subtle Orbit Halo & Dots -->
+          <circle cx="256" cy="256" r="154" fill="none" stroke="url(#neonMain)" stroke-width="3.5" stroke-dasharray="10 12" opacity="0.5"/>
+          <circle cx="256" cy="410" r="6" fill="#38bdf8"/>
+          <circle cx="232" cy="406" r="3.5" fill="#22d3ee" opacity="0.8"/>
+          <circle cx="280" cy="406" r="3.5" fill="#e879f9" opacity="0.8"/>
+
+          <!-- Soundwave Equalizer Bars -->
+          <g stroke="url(#neonMain)" stroke-width="9" stroke-linecap="round" opacity="0.9">
+            <line x1="88" y1="244" x2="88" y2="268"/>
+            <line x1="112" y1="220" x2="112" y2="292"/>
+            <line x1="136" y1="192" x2="136" y2="320"/>
+            <line x1="160" y1="214" x2="160" y2="298"/>
+
+            <line x1="232" y1="226" x2="232" y2="286"/>
+            <line x1="256" y1="204" x2="256" y2="308"/>
+            <line x1="280" y1="224" x2="280" y2="288"/>
+
+            <line x1="352" y1="212" x2="352" y2="300"/>
+            <line x1="376" y1="190" x2="376" y2="322"/>
+            <line x1="400" y1="222" x2="400" y2="290"/>
+            <line x1="424" y1="244" x2="424" y2="268"/>
+          </g>
+
+          <!-- Glowing Double Music Note -->
+          <g filter="url(#glowStrong)">
+            <path d="M204 334V166L334 134V302" fill="none" stroke="url(#neonMain)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M204 198L334 166" fill="none" stroke="url(#neonMain)" stroke-width="16" stroke-linecap="round"/>
+            <ellipse cx="176" cy="340" rx="38" ry="30" transform="rotate(-18 176 340)" fill="#090f24" stroke="#22d3ee" stroke-width="18"/>
+            <ellipse cx="306" cy="308" rx="38" ry="30" transform="rotate(-18 306 308)" fill="#130a24" stroke="#e879f9" stroke-width="18"/>
+          </g>
+        </svg>
+      `.trim();
+    }
+
+    function initAppIconsAndManifest() {
+      try {
+        const svgString = buildNeonAppIconSVG(512);
+        const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+        const svgDataUri = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgString);
+
+        // 1. Set SVG Favicon immediately
+        const faviconEl = document.getElementById('dynamic-favicon');
+        if (faviconEl) faviconEl.href = svgDataUri;
+
+        // 2. Render 512x512 PNG via Canvas for Apple Touch Icon, PWA Manifest & Download
+        const img = new Image();
+        const url = URL.createObjectURL(svgBlob);
+        img.onload = () => {
+          const canvas = document.createElement('canvas');
+          canvas.width = 512;
+          canvas.height = 512;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, 512, 512);
+          URL.revokeObjectURL(url);
+
+          generatedIconPngUrl = canvas.toDataURL('image/png');
+
+          // Attach to Apple Touch Icon
+          const appleIconEl = document.getElementById('dynamic-apple-icon');
+          if (appleIconEl) appleIconEl.href = generatedIconPngUrl;
+
+          // Build dynamic PWA Web App Manifest
+          const manifest = {
+            name: 'Music Assistant Hi-Fi',
+            short_name: 'Music Assistant',
+            description: 'Trình điều khiển Music Assistant & Home Assistant phong cách Hi-Fi',
+            start_url: '.',
+            display: 'standalone',
+            background_color: '#09090b',
+            theme_color: '#09090b',
+            icons: [
+              {
+                src: generatedIconPngUrl,
+                sizes: '512x512',
+                type: 'image/png',
+                purpose: 'any maskable'
+              }
+            ]
+          };
+          const manifestBlob = new Blob([JSON.stringify(manifest)], { type: 'application/manifest+json' });
+          const manifestUrl = URL.createObjectURL(manifestBlob);
+          const manifestEl = document.getElementById('dynamic-manifest');
+          if (manifestEl) manifestEl.href = manifestUrl;
+        };
+        img.src = url;
+      } catch (err) {
+        console.warn('Không thể khởi tạo icon động:', err);
+      }
+    }
+
+    function downloadAppIconPng() {
+      if (!generatedIconPngUrl) {
+        showToast('Đang tạo file icon, vui lòng thử lại sau giây lát...', 'info');
+        return;
+      }
+      const link = document.createElement('a');
+      link.download = 'music-assistant-neon-icon-512.png';
+      link.href = generatedIconPngUrl;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast('Đã tải xuống icon PNG 512x512!', 'success');
+    }
+
+    // --- Default Mock Data for Demo Mode ---
+    const DEMO_PLAYERS = [
+      {
+        player_id: 'ma_living_room',
+        name: 'Phòng Khách Hi-Fi',
+        state: 'playing',
+        volume_level: 52,
+        volume_muted: false,
+        shuffle: false,
+        repeat: 'all',
+        current_item: {
+          title: 'Midnight City Reflections',
+          artist: 'Nils Frahm',
+          album: 'Spaces • Qobuz Hi-Res',
+          quality: 'FLAC 24-bit/96kHz',
+          duration: 292,
+          elapsed: 102,
+          image: 'https://placehold.co/300x300/18181b/22d3ee?text=Spaces'
+        }
+      },
+      {
+        player_id: 'ma_study',
+        name: 'Phòng Làm Việc',
+        state: 'paused',
+        volume_level: 35,
+        volume_muted: false,
+        shuffle: true,
+        repeat: 'off',
+        current_item: {
+          title: 'Avril 14th',
+          artist: 'Aphex Twin',
+          album: 'Drukqs • Tidal FLAC',
+          quality: 'FLAC 16-bit/44.1kHz',
+          duration: 125,
+          elapsed: 44,
+          image: 'https://placehold.co/300x300/1e293b/38bdf8?text=Drukqs'
+        }
+      },
+      {
+        player_id: 'ma_bedroom',
+        name: 'Phòng Ngủ',
+        state: 'idle',
+        volume_level: 25,
+        volume_muted: false,
+        shuffle: false,
+        repeat: 'off',
+        current_item: {
+          title: 'Weightless',
+          artist: 'Marconi Union',
+          album: 'Ambient Transmissions',
+          quality: 'FLAC 24-bit/48kHz',
+          duration: 485,
+          elapsed: 0,
+          image: 'https://placehold.co/300x300/1f2937/a78bfa?text=Ambient'
+        }
+      },
+      {
+        player_id: 'ma_group_all',
+        name: 'Toàn Bộ Nhà',
+        state: 'playing',
+        volume_level: 45,
+        volume_muted: false,
+        shuffle: false,
+        repeat: 'all',
+        current_item: {
+          title: 'Midnight City Reflections',
+          artist: 'Nils Frahm',
+          album: 'Spaces • Multi-room Sync',
+          quality: 'FLAC 24-bit/96kHz',
+          duration: 292,
+          elapsed: 102,
+          image: 'https://placehold.co/300x300/18181b/10b981?text=Sync+All'
+        }
+      }
+    ];
+
+    const DEMO_QUEUE = [
+      { uri: 'qobuz://track/101', title: 'Says', artist: 'Nils Frahm', album: 'Spaces', duration: 498, image: 'https://placehold.co/120x120/18181b/10b981?text=Says' },
+      { uri: 'qobuz://track/102', title: 'Kiara', artist: 'Bonobo', album: 'Black Sands', duration: 230, image: 'https://placehold.co/120x120/0f172a/34d399?text=Kiara' },
+      { uri: 'tidal://track/103', title: 'Teardrop', artist: 'Massive Attack', album: 'Mezzanine', duration: 330, image: 'https://placehold.co/120x120/1e1b4b/818cf8?text=Teardrop' },
+      { uri: 'local://track/104', title: 'Nuvole Bianche', artist: 'Ludovico Einaudi', album: 'Una Mattina', duration: 357, image: 'https://placehold.co/120x120/27272a/fbbf24?text=Piano' }
+    ];
+
+    const DEMO_PLAYLISTS = [
+      { uri: 'library://playlist/1', title: 'Audiophile Test Tracks', subtitle: '42 bài hát • Hi-Res FLAC', image: 'https://placehold.co/120x120/064e3b/34d399?text=Hi-Fi' },
+      { uri: 'library://playlist/2', title: 'Acoustic & Jazz Đêm Muộn', subtitle: '28 bài hát • Qobuz', image: 'https://placehold.co/120x120/312e81/a5b4fc?text=Jazz' },
+      { uri: 'library://playlist/3', title: 'Tập Trung Làm Việc', subtitle: '65 bài hát • Ambient & Piano', image: 'https://placehold.co/120x120/3f3f46/e4e4e7?text=Focus' },
+      { uri: 'library://playlist/4', title: 'Nhạc Việt Tuyển Chọn Lossless', subtitle: '34 bài hát • Thư viện cục bộ', image: 'https://placehold.co/120x120/7f1d1d/fca5a5?text=V-Pop' }
+    ];
+
+    const DEMO_FAVORITES = [
+      { uri: 'qobuz://track/201', title: 'Everything In Its Right Place', artist: 'Radiohead', album: 'Kid A', duration: 251, image: 'https://placehold.co/120x120/18181b/f43f5e?text=Kid+A' },
+      { uri: 'qobuz://track/202', title: 'So What', artist: 'Miles Davis', album: 'Kind of Blue', duration: 562, image: 'https://placehold.co/120x120/1e3a8a/93c5fd?text=Miles' },
+      { uri: 'tidal://track/203', title: 'Time', artist: 'Hans Zimmer', album: 'Inception OST', duration: 275, image: 'https://placehold.co/120x120/27272a/d4d4d8?text=Time' },
+      { uri: 'local://track/204', title: 'Diễm Xưa (Acoustic)', artist: 'Trịnh Công Sơn', album: 'Tuyển Tập Vàng', duration: 264, image: 'https://placehold.co/120x120/451a03/fcd34d?text=TCS' }
+    ];
+
+    const DEMO_ALBUMS = [
+      { uri: 'library://album/1', title: 'Spaces', subtitle: 'Nils Frahm • FLAC 24-bit/96kHz', image: 'https://placehold.co/120x120/0f172a/22d3ee?text=Spaces' },
+      { uri: 'library://album/2', title: 'Random Access Memories', subtitle: 'Daft Punk • Qobuz Hi-Res', image: 'https://placehold.co/120x120/1e1b4b/e879f9?text=RAM' },
+      { uri: 'library://album/3', title: 'Kind of Blue', subtitle: 'Miles Davis • Master FLAC', image: 'https://placehold.co/120x120/172554/38bdf8?text=Blue' },
+      { uri: 'library://album/4', title: 'Black Sands', subtitle: 'Bonobo • Ninja Tune', image: 'https://placehold.co/120x120/18181b/a855f7?text=Sands' }
+    ];
+
+    const DEMO_ARTISTS = [
+      { uri: 'library://artist/1', title: 'Nils Frahm', subtitle: '14 albums • Modern Classical', image: 'https://placehold.co/120x120/0b132b/22d3ee?text=NF' },
+      { uri: 'library://artist/2', title: 'Bonobo', subtitle: '9 albums • Downtempo / Electronic', image: 'https://placehold.co/120x120/1c0d29/e879f9?text=BN' },
+      { uri: 'library://artist/3', title: 'Miles Davis', subtitle: '32 albums • Jazz Legend', image: 'https://placehold.co/120x120/1e293b/818cf8?text=MD' },
+      { uri: 'library://artist/4', title: 'Ludovico Einaudi', subtitle: '18 albums • Piano', image: 'https://placehold.co/120x120/27272a/38bdf8?text=LE' }
+    ];
+
+    // --- Application State ---
+    const state = {
+      config: {
+        demo: false,
+        mode: 'ma', // 'ma' | 'ha'
+        maUrl: '',
+        maToken: '',
+        maUser: '',
+        haUrl: 'ws://homeassistant.local:8123/api/websocket',
+        haToken: ''
+      },
+      connected: false,
+      ws: null,
+      rpcId: 1,
+      pendingRequests: new Map(),
+      players: [],
+      selectedPlayerId: null,
+      activeTab: 'queue',
+      queue: [],
+      playlists: [],
+      albums: [],
+      artists: [],
+      favorites: [],
+      searchResults: [],
+      isSeeking: false,
+      isAdjustingVolume: false,
+      progressTimer: null
+    };
+
+    // --- DOM Elements Cache ---
+    const els = {
+      connectionBadge: document.getElementById('connection-badge'),
+      statusDot: document.getElementById('status-dot'),
+      statusText: document.getElementById('status-text'),
+      modeSubtitle: document.getElementById('mode-subtitle'),
+      zoneSelector: document.getElementById('zone-selector'),
+      npArtwork: document.getElementById('np-artwork'),
+      npEqOverlay: document.getElementById('np-eq-overlay'),
+      npQuality: document.getElementById('np-quality'),
+      npTitle: document.getElementById('np-title'),
+      npArtist: document.getElementById('np-artist'),
+      npAlbum: document.getElementById('np-album'),
+      seekSlider: document.getElementById('seek-slider'),
+      timeElapsed: document.getElementById('time-elapsed'),
+      timeRemaining: document.getElementById('time-remaining'),
+      btnShuffle: document.getElementById('btn-shuffle'),
+      btnPrev: document.getElementById('btn-prev'),
+      btnPlayPause: document.getElementById('btn-play-pause'),
+      iconPlay: document.getElementById('icon-play'),
+      iconPause: document.getElementById('icon-pause'),
+      btnNext: document.getElementById('btn-next'),
+      btnRepeat: document.getElementById('btn-repeat'),
+      repeatBadge: document.getElementById('repeat-badge'),
+      btnMute: document.getElementById('btn-mute'),
+      iconVolOn: document.getElementById('icon-vol-on'),
+      iconVolMute: document.getElementById('icon-vol-mute'),
+      volumeSlider: document.getElementById('volume-slider'),
+      volumeLabel: document.getElementById('volume-label'),
+      tabBtns: document.querySelectorAll('.tab-btn'),
+      searchBarWrapper: document.getElementById('search-bar-wrapper'),
+      searchInput: document.getElementById('search-input'),
+      btnSearchSubmit: document.getElementById('btn-search-submit'),
+      tabContent: document.getElementById('tab-content'),
+      settingsModal: document.getElementById('settings-modal'),
+      settingsForm: document.getElementById('settings-form'),
+      cfgDemo: document.getElementById('cfg-demo'),
+      connModeBtns: document.querySelectorAll('.conn-mode-btn'),
+      fieldsMa: document.getElementById('fields-ma'),
+      fieldsHa: document.getElementById('fields-ha'),
+      cfgMaUrl: document.getElementById('cfg-ma-url'),
+      cfgMaToken: document.getElementById('cfg-ma-token'),
+      cfgMaUser: document.getElementById('cfg-ma-user'),
+      cfgMaPass: document.getElementById('cfg-ma-pass'),
+      cfgHaUrl: document.getElementById('cfg-ha-url'),
+      cfgHaToken: document.getElementById('cfg-ha-token')
+    };
+
+    // --- Helper Utilities ---
+    function formatTime(seconds) {
+      if (!seconds || isNaN(seconds) || seconds < 0) return '00:00';
+      const mins = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60);
+      return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    // Escape mọi dữ liệu từ máy chủ trước khi chèn vào HTML (chống XSS)
+    function esc(v) {
+      return String(v ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+    // Chỉ cho phép ảnh http(s), data:image hoặc đường dẫn tương đối
+    function safeImg(u, fallback) {
+      const s = String(u ?? '').trim();
+      return /^(https?:\/\/|data:image\/|\/(?!\/))/i.test(s) ? s : fallback;
+    }
+
+    function showToast(message, type = 'info') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      const colors = {
+        info: 'bg-zinc-900 dark:bg-zinc-800 text-white border-zinc-700',
+        success: 'bg-emerald-600 text-white border-emerald-500',
+        error: 'bg-rose-600 text-white border-rose-500'
+      };
+      toast.className = `px-4 py-2.5 rounded-2xl border shadow-lg text-xs font-medium flex items-center justify-between gap-2 transition-all duration-300 ${colors[type] || colors.info}`;
+      toast.textContent = message;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(-6px)';
+        setTimeout(() => toast.remove(), 300);
+      }, 2800);
+    }
+
+    function getActivePlayer() {
+      return state.players.find(p => p.player_id === state.selectedPlayerId) || state.players[0] || null;
+    }
+
+    // --- Configuration & Storage ---
+    function loadConfig() {
+      try {
+        const saved = localStorage.getItem('ma_controller_config');
+        if (saved) {
+          state.config = { ...state.config, ...JSON.parse(saved) };
+        }
+        const savedTheme = localStorage.getItem('ma_controller_theme');
+        if (savedTheme === 'light') {
+          document.documentElement.classList.remove('dark');
+        } else {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {
+        console.warn('Không thể đọc cấu hình từ localStorage:', e);
+      }
+    }
+
+    function saveConfig() {
+      try {
+        localStorage.setItem('ma_controller_config', JSON.stringify(state.config));
+      } catch (e) {
+        console.warn('Không thể lưu cấu hình:', e);
+      }
+    }
+
+    // --- Connection Management ---
+    function updateConnectionBadge(status, text, subtitle) {
+      els.statusText.textContent = text;
+      if (subtitle) els.modeSubtitle.textContent = subtitle;
+
+      els.connectionBadge.className = 'inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-medium';
+      els.statusDot.className = 'w-1.5 h-1.5 rounded-full';
+
+      if (status === 'connected') {
+        els.connectionBadge.classList.add('bg-emerald-500/15', 'text-emerald-600', 'dark:text-emerald-400');
+        els.statusDot.classList.add('bg-emerald-500');
+      } else if (status === 'demo') {
+        els.connectionBadge.classList.add('bg-amber-500/15', 'text-amber-600', 'dark:text-amber-400');
+        els.statusDot.classList.add('bg-amber-500');
+      } else if (status === 'connecting') {
+        els.connectionBadge.classList.add('bg-sky-500/15', 'text-sky-600', 'dark:text-sky-400');
+        els.statusDot.classList.add('bg-sky-500', 'animate-pulse');
+      } else {
+        els.connectionBadge.classList.add('bg-rose-500/15', 'text-rose-600', 'dark:text-rose-400');
+        els.statusDot.classList.add('bg-rose-500');
+      }
+    }
+
+    function disconnectWS() {
+      if (state.ws) {
+        try {
+          state.ws.onclose = null;
+          state.ws.close();
+        } catch (e) {}
+        state.ws = null;
+      }
+      state.connected = false;
+      state.pendingRequests.clear();
+    }
+
+    function initConnection() {
+      disconnectWS();
+
+      if (state.config.demo) {
+        state.connected = true;
+        state.players = JSON.parse(JSON.stringify(DEMO_PLAYERS));
+        state.queue = JSON.parse(JSON.stringify(DEMO_QUEUE));
+        state.playlists = JSON.parse(JSON.stringify(DEMO_PLAYLISTS));
+        state.albums = JSON.parse(JSON.stringify(DEMO_ALBUMS));
+        state.artists = JSON.parse(JSON.stringify(DEMO_ARTISTS));
+        state.favorites = JSON.parse(JSON.stringify(DEMO_FAVORITES));
+        if (!state.selectedPlayerId || !state.players.some(p => p.player_id === state.selectedPlayerId)) {
+          state.selectedPlayerId = state.players[0].player_id;
+        }
+        updateConnectionBadge('demo', 'Chế độ Demo', 'Dữ liệu mô phỏng Hi-Fi');
+        renderAll();
+        return;
+      }
+
+      if (state.config.mode === 'ma') {
+        connectMusicAssistant();
+      } else {
+        connectHomeAssistant();
+      }
+    }
+
+    // --- Direct Music Assistant JSON-RPC WebSocket ---
+    function connectMusicAssistant() {
+      const url = state.config.maUrl.trim();
+      if (!url) {
+        showToast('Vui lòng nhập địa chỉ WebSocket Music Assistant', 'error');
+        return;
+      }
+
+      updateConnectionBadge('connecting', 'Đang kết nối...', url);
+      try {
+        const ws = new WebSocket(url);
+        state.ws = ws;
+
+        ws.onopen = async () => {
+          if (!state.config.maToken && state.config.maUser && state.maPass) {
+            try {
+              state.config.maToken = await loginMA(url, state.config.maUser, state.maPass);
+              saveConfig();
+            } catch (err) {
+              updateConnectionBadge('error', 'Đăng nhập thất bại', err.message);
+              showToast('Đăng nhập Music Assistant thất bại: ' + err.message, 'error');
+              return;
+            } finally {
+              state.maPass = '';
+            }
+          }
+          const token = (state.config.maToken || '').trim();
+          if (!token) {
+            updateConnectionBadge('error', 'Thiếu token', 'Nhập token Music Assistant trong Cài đặt');
+            showToast('Music Assistant yêu cầu đăng nhập — mở Cài đặt để nhập tên + mật khẩu hoặc token', 'error');
+            return;
+          }
+          try {
+            await sendMARpc('auth', { token });
+          } catch (err) {
+            updateConnectionBadge('error', 'Sai token MA', err.message);
+            showToast('Xác thực Music Assistant thất bại: ' + err.message, 'error');
+            return;
+          }
+          state.connected = true;
+          updateConnectionBadge('connected', 'Music Assistant', url);
+          showToast('Đã kết nối Music Assistant', 'success');
+          await refreshMAData();
+        };
+
+        ws.onmessage = (event) => {
+          try {
+            const msg = JSON.parse(event.data);
+            // Handle JSON-RPC response
+            if (msg.message_id && state.pendingRequests.has(msg.message_id)) {
+              const { resolve, reject } = state.pendingRequests.get(msg.message_id);
+              state.pendingRequests.delete(msg.message_id);
+              if (msg.error_code) {
+                reject(new Error(msg.details || 'Lỗi từ Music Assistant'));
+              } else {
+                resolve(msg.result);
+              }
+            }
+            // Handle MA Server Push Events (player_updated, queue_updated)
+            if (msg.event === 'player_updated' && msg.data) {
+              updateSingleMAPlayer(msg.data);
+            } else if (msg.event === 'queue_updated' && msg.data) {
+              applyQueueState(msg.data);
+              if (msg.data.queue_id === state.selectedPlayerId) {
+                fetchMAQueue(state.selectedPlayerId);
+              }
+            }
+          } catch (err) {
+            console.error('Lỗi xử lý gói tin MA:', err);
+          }
+        };
+
+        ws.onerror = () => {
+          updateConnectionBadge('error', 'Lỗi kết nối', 'Kiểm tra IP/Cổng hoặc HTTPS/WSS');
+        };
+
+        ws.onclose = () => {
+          if (!state.config.demo) {
+            state.connected = false;
+            updateConnectionBadge('error', 'Mất kết nối', 'Đã ngắt kết nối máy chủ');
+          }
+        };
+      } catch (err) {
+        updateConnectionBadge('error', 'Lỗi URL', err.message);
+        showToast('Không thể khởi tạo WebSocket: ' + err.message, 'error');
+      }
+    }
+
+    async function loginMA(wsUrl, username, password) {
+      const base = wsUrl.replace(/^ws/i, 'http').replace(/\/ws\/?$/, '').replace(/\/+$/, '');
+      let res;
+      try {
+        res = await fetch(base + '/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            username, password,
+            credentials: { username, password },
+            device_name: 'MA Controller (' + (navigator.platform || 'web') + ')'
+          })
+        });
+      } catch (e) {
+        throw new Error('trình duyệt không gọi được máy chủ — hãy dán token tạo trong giao diện MA');
+      }
+      if (res.status === 401) throw new Error('sai tên đăng nhập hoặc mật khẩu');
+      if (!res.ok) throw new Error('máy chủ trả mã ' + res.status);
+      const d = await res.json();
+      const token = d.token || d.access_token || '';
+      if (!token) throw new Error('máy chủ không trả token');
+      return token;
+    }
+
+    function sendMARpc(command, args = {}) {
+      return new Promise((resolve, reject) => {
+        if (!state.ws || state.ws.readyState !== WebSocket.OPEN) {
+          reject(new Error('Chưa kết nối tới Music Assistant'));
+          return;
+        }
+        const message_id = String(state.rpcId++);
+        state.pendingRequests.set(message_id, { resolve, reject });
+        state.ws.send(JSON.stringify({ message_id, command, args }));
+        setTimeout(() => {
+          if (state.pendingRequests.has(message_id)) {
+            state.pendingRequests.delete(message_id);
+            reject(new Error('Hết thời gian phản hồi lệnh ' + command));
+          }
+        }, 8000);
+      });
+    }
+
+    function mapMAPlayer(raw) {
+      const currentMedia = raw.current_media || {};
+      return {
+        player_id: raw.player_id,
+        name: raw.display_name || raw.name || raw.player_id,
+        state: raw.state || 'idle', // 'playing' | 'paused' | 'idle'
+        volume_level: raw.volume_level ?? 50,
+        volume_muted: Boolean(raw.volume_muted),
+        shuffle: Boolean(state.maQueues?.[raw.player_id]?.shuffle_enabled),
+        repeat: state.maQueues?.[raw.player_id]?.repeat_mode || 'off',
+        current_item: {
+          title: currentMedia.title || 'Chưa có bài hát',
+          artist: currentMedia.artist || 'Music Assistant',
+          album: currentMedia.album || '',
+          quality: currentMedia.content_type ? currentMedia.content_type.toUpperCase() : 'FLAC',
+          duration: currentMedia.duration || 0,
+          elapsed: raw.elapsed_time || 0,
+          image: currentMedia.image_url || 'https://placehold.co/300x300/18181b/10b981?text=MA'
+        }
+      };
+    }
+
+    function applyQueueState(q) {
+      state.maQueues = state.maQueues || {};
+      state.maQueues[q.queue_id] = q;
+      const p = state.players.find(x => x.player_id === q.queue_id);
+      if (p) {
+        p.shuffle = Boolean(q.shuffle_enabled);
+        p.repeat = q.repeat_mode || 'off';
+        renderAll();
+      }
+    }
+
+    function updateSingleMAPlayer(raw) {
+      const mapped = mapMAPlayer(raw);
+      const idx = state.players.findIndex(p => p.player_id === mapped.player_id);
+      if (idx >= 0) {
+        state.players[idx] = mapped;
+      } else {
+        state.players.push(mapped);
+      }
+      renderAll();
+    }
+
+    async function refreshMAData() {
+      try {
+        const queues = await sendMARpc('player_queues/all').catch(() => []);
+        state.maQueues = {};
+        if (Array.isArray(queues)) queues.forEach(q => { state.maQueues[q.queue_id] = q; });
+        const players = await sendMARpc('players/all');
+        if (Array.isArray(players)) {
+          state.players = players.filter(p => p.available !== false).map(mapMAPlayer);
+          if (state.players.length > 0 && (!state.selectedPlayerId || !state.players.some(p => p.player_id === state.selectedPlayerId))) {
+            state.selectedPlayerId = state.players[0].player_id;
+          }
+        }
+        if (state.selectedPlayerId) {
+          await fetchMAQueue(state.selectedPlayerId);
+        }
+        const [playlists, tracks, albums, artists] = await Promise.allSettled([
+          sendMARpc('music/playlists/library_items', { limit: 25 }),
+          sendMARpc('music/tracks/library_items', { limit: 25, favorite: true }),
+          sendMARpc('music/albums/library_items', { limit: 25 }),
+          sendMARpc('music/artists/library_items', { limit: 25 })
+        ]);
+        if (playlists.status === 'fulfilled' && Array.isArray(playlists.value)) {
+          state.playlists = playlists.value.map(pl => ({
+            uri: pl.uri,
+            title: pl.name,
+            subtitle: pl.owner || 'Danh sách phát',
+            image: pl.metadata?.images?.[0]?.path || 'https://placehold.co/120x120/18181b/22d3ee?text=Playlist'
+          }));
+        }
+        if (tracks.status === 'fulfilled' && Array.isArray(tracks.value)) {
+          state.favorites = tracks.value.map(tr => ({
+            uri: tr.uri,
+            title: tr.name,
+            artist: tr.artists?.map(a => a.name).join(', ') || 'Nghệ sĩ',
+            album: tr.album?.name || '',
+            duration: tr.duration || 0,
+            image: tr.metadata?.images?.[0]?.path || 'https://placehold.co/120x120/18181b/e879f9?text=Track'
+          }));
+        }
+        if (albums.status === 'fulfilled' && Array.isArray(albums.value)) {
+          state.albums = albums.value.map(al => ({
+            uri: al.uri,
+            title: al.name,
+            subtitle: al.artists?.map(a => a.name).join(', ') || 'Album',
+            image: al.metadata?.images?.[0]?.path || 'https://placehold.co/120x120/18181b/818cf8?text=Album'
+          }));
+        }
+        if (artists.status === 'fulfilled' && Array.isArray(artists.value)) {
+          state.artists = artists.value.map(ar => ({
+            uri: ar.uri,
+            title: ar.name,
+            subtitle: 'Nghệ sĩ • Thư viện MA',
+            image: ar.metadata?.images?.[0]?.path || 'https://placehold.co/120x120/18181b/38bdf8?text=Artist'
+          }));
+        }
+        renderAll();
+      } catch (err) {
+        showToast('Lỗi tải dữ liệu MA: ' + err.message, 'error');
+      }
+    }
+
+    async function fetchMAQueue(queueId) {
+      try {
+        const items = await sendMARpc('player_queues/items', { queue_id: queueId, limit: 30 });
+        if (Array.isArray(items)) {
+          state.queue = items.map(item => ({
+            uri: item.media_item?.uri || item.uri,
+            title: item.name || item.media_item?.name || 'Bản nhạc',
+            artist: item.media_item?.artists?.map(a => a.name).join(', ') || '',
+            album: item.media_item?.album?.name || '',
+            duration: item.duration || 0,
+            image: item.image?.path || 'https://placehold.co/120x120/18181b/10b981?text=Queue'
+          }));
+          if (state.activeTab === 'queue') renderTabContent();
+        }
+      } catch (e) {
+        // Fallback if endpoint differs across MA versions
+      }
+    }
+
+    // --- Home Assistant WebSocket API ---
+    function connectHomeAssistant() {
+      const url = state.config.haUrl.trim();
+      const token = state.config.haToken.trim();
+      if (!url || !token) {
+        showToast('Vui lòng nhập URL và Access Token của Home Assistant', 'error');
+        return;
+      }
+
+      updateConnectionBadge('connecting', 'Đang xác thực HA...', url);
+      try {
+        const ws = new WebSocket(url);
+        state.ws = ws;
+
+        ws.onmessage = async (event) => {
+          const msg = JSON.parse(event.data);
+          if (msg.type === 'auth_required') {
+            ws.send(JSON.stringify({ type: 'auth', access_token: token }));
+          } else if (msg.type === 'auth_ok') {
+            state.connected = true;
+            updateConnectionBadge('connected', 'Home Assistant', 'Media Players');
+            showToast('Đã kết nối Home Assistant', 'success');
+            await fetchHAPlayers();
+            // Subscribe to state changes
+            sendHARequest({ type: 'subscribe_events', event_type: 'state_changed' });
+          } else if (msg.type === 'auth_invalid') {
+            updateConnectionBadge('error', 'Sai Token HA', msg.message);
+            showToast('Token Home Assistant không hợp lệ', 'error');
+          } else if (msg.id && state.pendingRequests.has(msg.id)) {
+            const { resolve, reject } = state.pendingRequests.get(msg.id);
+            state.pendingRequests.delete(msg.id);
+            if (msg.success === false) {
+              reject(new Error(msg.error?.message || 'Lỗi HA API'));
+            } else {
+              resolve(msg.result);
+            }
+          } else if (msg.type === 'event' && msg.event?.data?.entity_id?.startsWith('media_player.')) {
+            const newState = msg.event.data.new_state;
+            if (newState) {
+              const mapped = mapHAEntity(newState);
+              const idx = state.players.findIndex(p => p.player_id === mapped.player_id);
+              if (idx >= 0) state.players[idx] = mapped;
+              renderAll();
+            }
+          }
+        };
+
+        ws.onerror = () => {
+          updateConnectionBadge('error', 'Lỗi kết nối HA', 'Kiểm tra địa chỉ WebSocket');
+        };
+
+        ws.onclose = () => {
+          if (!state.config.demo) {
+            state.connected = false;
+            updateConnectionBadge('error', 'Mất kết nối HA', 'Đã ngắt kết nối');
+          }
+        };
+      } catch (err) {
+        showToast('Lỗi WebSocket HA: ' + err.message, 'error');
+      }
+    }
+
+    function sendHARequest(payload) {
+      return new Promise((resolve, reject) => {
+        if (!state.ws || state.ws.readyState !== WebSocket.OPEN) {
+          reject(new Error('Chưa kết nối Home Assistant'));
+          return;
+        }
+        const id = state.rpcId++;
+        state.pendingRequests.set(id, { resolve, reject });
+        state.ws.send(JSON.stringify({ id, ...payload }));
+      });
+    }
+
+    function mapHAEntity(entity) {
+      const attr = entity.attributes || {};
+      const baseUrl = state.config.haUrl.replace(/^ws/, 'http').replace(/\/api\/websocket$/, '');
+      let img = attr.entity_picture || '';
+      if (img && img.startsWith('/')) img = baseUrl + img;
+
+      return {
+        player_id: entity.entity_id,
+        name: attr.friendly_name || entity.entity_id,
+        state: entity.state === 'playing' ? 'playing' : (entity.state === 'paused' ? 'paused' : 'idle'),
+        volume_level: Math.round((attr.volume_level ?? 0.5) * 100),
+        volume_muted: Boolean(attr.is_volume_muted),
+        shuffle: Boolean(attr.shuffle),
+        repeat: attr.repeat || 'off',
+        current_item: {
+          title: attr.media_title || 'Không có nội dung',
+          artist: attr.media_artist || attr.app_name || 'Home Assistant',
+          album: attr.media_album_name || '',
+          quality: attr.media_content_type ? attr.media_content_type.toUpperCase() : 'HA MEDIA',
+          duration: attr.media_duration || 0,
+          elapsed: attr.media_position || 0,
+          image: img || 'https://placehold.co/300x300/18181b/38bdf8?text=HA+Player'
+        }
+      };
+    }
+
+    async function fetchHAPlayers() {
+      try {
+        const states = await sendHARequest({ type: 'get_states' });
+        const mediaPlayers = states.filter(s => s.entity_id.startsWith('media_player.') && s.state !== 'unavailable');
+        state.players = mediaPlayers.map(mapHAEntity);
+        if (state.players.length > 0 && (!state.selectedPlayerId || !state.players.some(p => p.player_id === state.selectedPlayerId))) {
+          state.selectedPlayerId = state.players[0].player_id;
+        }
+        renderAll();
+      } catch (err) {
+        showToast('Không tải được danh sách thiết bị HA: ' + err.message, 'error');
+      }
+    }
+
+    // --- Player Control Commands ---
+    async function executeCommand(cmd, extra = {}) {
+      const player = getActivePlayer();
+      if (!player) return;
+
+      // Demo Mode Simulation
+      if (state.config.demo) {
+        if (cmd === 'play_pause') {
+          player.state = player.state === 'playing' ? 'paused' : 'playing';
+        } else if (cmd === 'next') {
+          if (state.queue.length > 0) {
+            const nextTrack = state.queue.shift();
+            state.queue.push({
+              uri: 'demo://prev',
+              title: player.current_item.title,
+              artist: player.current_item.artist,
+              album: player.current_item.album,
+              duration: player.current_item.duration,
+              image: player.current_item.image
+            });
+            player.current_item = {
+              ...player.current_item,
+              title: nextTrack.title,
+              artist: nextTrack.artist,
+              album: nextTrack.album || 'Music Assistant',
+              duration: nextTrack.duration || 240,
+              elapsed: 0,
+              image: nextTrack.image
+            };
+            player.state = 'playing';
+          }
+        } else if (cmd === 'previous') {
+          player.current_item.elapsed = 0;
+          player.state = 'playing';
+        } else if (cmd === 'volume_set') {
+          player.volume_level = extra.volume;
+          player.volume_muted = false;
+        } else if (cmd === 'volume_mute') {
+          player.volume_muted = !player.volume_muted;
+        } else if (cmd === 'seek') {
+          player.current_item.elapsed = extra.position;
+        } else if (cmd === 'shuffle') {
+          player.shuffle = !player.shuffle;
+        } else if (cmd === 'repeat') {
+          const cycle = { off: 'all', all: 'one', one: 'off' };
+          player.repeat = cycle[player.repeat] || 'all';
+        } else if (cmd === 'play_media') {
+          player.current_item = {
+            title: extra.item.title,
+            artist: extra.item.artist || extra.item.subtitle || 'Music Assistant',
+            album: extra.item.album || 'Danh sách phát',
+            quality: 'FLAC 24-bit/96kHz',
+            duration: extra.item.duration || 245,
+            elapsed: 0,
+            image: extra.item.image
+          };
+          player.state = 'playing';
+          showToast(`Đang phát: ${extra.item.title}`, 'success');
+        } else if (cmd === 'add_queue') {
+          state.queue.push(extra.item);
+          showToast(`Đã thêm vào hàng đợi: ${extra.item.title}`, 'info');
+        }
+        renderAll();
+        return;
+      }
+
+      // Live Music Assistant WebSocket Commands
+      try {
+        if (state.config.mode === 'ma') {
+          const pid = player.player_id;
+          if (cmd === 'play_pause') await sendMARpc('players/cmd/play_pause', { player_id: pid });
+          else if (cmd === 'next') await sendMARpc('players/cmd/next', { player_id: pid });
+          else if (cmd === 'previous') await sendMARpc('players/cmd/previous', { player_id: pid });
+          else if (cmd === 'volume_set') await sendMARpc('players/cmd/volume_set', { player_id: pid, volume_level: Math.round(extra.volume) });
+          else if (cmd === 'volume_mute') await sendMARpc('players/cmd/volume_mute', { player_id: pid, muted: !player.volume_muted });
+          else if (cmd === 'seek') await sendMARpc('players/cmd/seek', { player_id: pid, position: Math.round(extra.position) });
+          else if (cmd === 'shuffle') await sendMARpc('player_queues/shuffle', { queue_id: pid, shuffle_enabled: !player.shuffle });
+          else if (cmd === 'repeat') {
+            const cycle = { off: 'all', all: 'one', one: 'off' };
+            await sendMARpc('player_queues/repeat', { queue_id: pid, repeat_mode: cycle[player.repeat] || 'all' });
+          } else if (cmd === 'play_media') {
+            await sendMARpc('player_queues/play_media', { queue_id: pid, media: extra.item.uri, option: 'play' });
+            showToast(`Đã gửi lệnh phát: ${extra.item.title}`, 'success');
+          } else if (cmd === 'add_queue') {
+            await sendMARpc('player_queues/play_media', { queue_id: pid, media: extra.item.uri, option: 'add' });
+            showToast(`Đã thêm vào hàng đợi: ${extra.item.title}`, 'info');
+          }
+        } else {
+          // Live Home Assistant Service Calls
+          const eid = player.player_id;
+          const callHAService = (service, service_data = {}) =>
+            sendHARequest({
+              type: 'call_service',
+              domain: 'media_player',
+              service,
+              target: { entity_id: eid },
+              service_data
+            });
+
+          if (cmd === 'play_pause') await callHAService('media_play_pause');
+          else if (cmd === 'next') await callHAService('media_next_track');
+          else if (cmd === 'previous') await callHAService('media_previous_track');
+          else if (cmd === 'volume_set') await callHAService('volume_set', { volume_level: extra.volume / 100 });
+          else if (cmd === 'volume_mute') await callHAService('volume_mute', { is_volume_muted: !player.volume_muted });
+          else if (cmd === 'seek') await callHAService('media_seek', { seek_position: extra.position });
+          else if (cmd === 'shuffle') await callHAService('shuffle_set', { shuffle: !player.shuffle });
+          else if (cmd === 'repeat') {
+            const cycle = { off: 'all', all: 'one', one: 'off' };
+            await callHAService('repeat_set', { repeat: cycle[player.repeat] || 'all' });
+          }
+        }
+      } catch (err) {
+        showToast('Lỗi điều khiển: ' + err.message, 'error');
+      }
+    }
+
+    // --- Search Handler ---
+    async function performSearch(query) {
+      const q = query.trim();
+      if (!q) return;
+
+      if (state.config.demo) {
+        const allMock = [...DEMO_QUEUE, ...DEMO_FAVORITES, ...DEMO_PLAYLISTS];
+        const filtered = allMock.filter(item =>
+          item.title.toLowerCase().includes(q.toLowerCase()) ||
+          (item.artist && item.artist.toLowerCase().includes(q.toLowerCase()))
+        );
+        state.searchResults = filtered.length > 0 ? filtered : [
+          { uri: 'qobuz://search/1', title: `${q} (Hi-Res Master)`, artist: 'Kết quả tìm kiếm Qobuz', duration: 234, image: 'https://placehold.co/120x120/064e3b/34d399?text=Qobuz' },
+          { uri: 'tidal://search/2', title: `${q} - Acoustic Session`, artist: 'Kết quả tìm kiếm Tidal', duration: 198, image: 'https://placehold.co/120x120/1e1b4b/818cf8?text=Tidal' }
+        ];
+        renderTabContent();
+        return;
+      }
+
+      if (state.config.mode === 'ma') {
+        try {
+          els.tabContent.innerHTML = `<div class="p-8 text-center text-xs text-zinc-400">Đang tìm kiếm "${esc(q)}"...</div>`;
+          const res = await sendMARpc('music/search', { search_query: q, limit: 20 });
+          const tracks = (res?.tracks || []).map(tr => ({
+            uri: tr.uri,
+            title: tr.name,
+            artist: tr.artists?.map(a => a.name).join(', ') || 'Nghệ sĩ',
+            album: tr.album?.name || '',
+            duration: tr.duration || 0,
+            image: tr.metadata?.images?.[0]?.path || 'https://placehold.co/120x120/18181b/10b981?text=Track'
+          }));
+          const playlists = (res?.playlists || []).map(pl => ({
+            uri: pl.uri,
+            title: pl.name,
+            artist: 'Danh sách phát',
+            duration: 0,
+            image: pl.metadata?.images?.[0]?.path || 'https://placehold.co/120x120/18181b/10b981?text=Playlist'
+          }));
+          state.searchResults = [...tracks, ...playlists];
+          renderTabContent();
+        } catch (err) {
+          showToast('Lỗi tìm kiếm: ' + err.message, 'error');
+        }
+      } else {
+        showToast('Tìm kiếm thư viện chỉ hỗ trợ khi kết nối trực tiếp Music Assistant', 'info');
+      }
+    }
+
+    // --- UI Rendering ---
+    function renderZones() {
+      if (state.players.length === 0) {
+        els.zoneSelector.innerHTML = `<span class="text-xs text-zinc-400 px-2 py-1.5">Chưa tìm thấy vùng phát nhạc nào</span>`;
+        return;
+      }
+
+      els.zoneSelector.innerHTML = state.players.map(player => {
+        const isSelected = player.player_id === state.selectedPlayerId;
+        const isPlaying = player.state === 'playing';
+        return `
+          <button
+            type="button"
+            onclick="selectPlayer(${esc(JSON.stringify(String(player.player_id)))})"
+            class="shrink-0 flex items-center gap-2 px-3.5 py-2 rounded-2xl text-xs font-medium border transition-all ${
+              isSelected
+                ? 'bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 border-zinc-900 dark:border-zinc-100 shadow-sm'
+                : 'bg-white dark:bg-surface-dark text-zinc-600 dark:text-zinc-300 border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
+            }"
+          >
+            <span class="w-2 h-2 rounded-full ${isPlaying ? 'bg-emerald-500 animate-pulse' : 'bg-zinc-400/50'}"></span>
+            <span>${esc(player.name)}</span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function renderNowPlaying() {
+      const player = getActivePlayer();
+      if (!player) return;
+
+      const item = player.current_item;
+      const isPlaying = player.state === 'playing';
+
+      els.npTitle.textContent = item.title;
+      els.npArtist.textContent = item.artist;
+      els.npAlbum.textContent = item.album || player.name;
+      els.npQuality.textContent = item.quality;
+      if (els.npArtwork.getAttribute('src') !== safeImg(item.image, 'https://placehold.co/300x300/18181b/22d3ee?text=Hi-Fi')) {
+        els.npArtwork.src = safeImg(item.image, 'https://placehold.co/300x300/18181b/22d3ee?text=Hi-Fi');
+      }
+
+      // Equalizer & Play/Pause icon state
+      els.npEqOverlay.classList.toggle('hidden', !isPlaying);
+      els.iconPlay.classList.toggle('hidden', isPlaying);
+      els.iconPause.classList.toggle('hidden', !isPlaying);
+
+      // Shuffle & Repeat states
+      els.btnShuffle.classList.toggle('text-emerald-500', player.shuffle);
+      els.btnShuffle.classList.toggle('text-zinc-400', !player.shuffle);
+
+      const repeatActive = player.repeat && player.repeat !== 'off';
+      els.btnRepeat.classList.toggle('text-emerald-500', repeatActive);
+      els.btnRepeat.classList.toggle('text-zinc-400', !repeatActive);
+      els.repeatBadge.classList.toggle('hidden', player.repeat !== 'one');
+
+      // Progress & Seek
+      if (!state.isSeeking) {
+        const dur = item.duration || 100;
+        const elap = Math.min(item.elapsed || 0, dur);
+        els.seekSlider.max = dur;
+        els.seekSlider.value = elap;
+        els.timeElapsed.textContent = formatTime(elap);
+        els.timeRemaining.textContent = dur > 0 ? `-${formatTime(Math.max(0, dur - elap))}` : '00:00';
+      }
+
+      // Volume
+      if (!state.isAdjustingVolume) {
+        els.volumeSlider.value = player.volume_level;
+        els.volumeLabel.textContent = `${player.volume_level}%`;
+      }
+      els.iconVolOn.classList.toggle('hidden', player.volume_muted);
+      els.iconVolMute.classList.toggle('hidden', !player.volume_muted);
+    }
+
+    function renderTabContent() {
+      let items = [];
+      let emptyText = 'Danh sách trống';
+      let isPlaylist = false;
+
+      if (state.activeTab === 'queue') {
+        items = state.queue;
+        emptyText = 'Hàng đợi phát nhạc đang trống';
+      } else if (state.activeTab === 'playlists') {
+        items = state.playlists;
+        emptyText = 'Không có danh sách phát nào';
+        isPlaylist = true;
+      } else if (state.activeTab === 'albums') {
+        items = state.albums;
+        emptyText = 'Không có album nào trong thư viện';
+        isPlaylist = true;
+      } else if (state.activeTab === 'artists') {
+        items = state.artists;
+        emptyText = 'Không có nghệ sĩ nào trong thư viện';
+        isPlaylist = true;
+      } else if (state.activeTab === 'tracks') {
+        items = state.favorites;
+        emptyText = 'Chưa có bài hát yêu thích nào';
+      } else if (state.activeTab === 'search') {
+        items = state.searchResults;
+        emptyText = 'Nhập từ khóa để tìm bài hát, nghệ sĩ hoặc album';
+      }
+
+      if (!items || items.length === 0) {
+        els.tabContent.innerHTML = `
+          <div class="py-12 px-4 text-center flex flex-col items-center justify-center gap-2 text-zinc-400 dark:text-zinc-500">
+            <svg class="w-8 h-8 opacity-40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M8 12h8"/>
+            </svg>
+            <p class="text-xs">${emptyText}</p>
+          </div>
+        `;
+        return;
+      }
+
+      els.tabContent.innerHTML = items.map((item, idx) => `
+        <div class="group flex items-center justify-between gap-3 p-2 rounded-2xl hover:bg-zinc-100/80 dark:hover:bg-zinc-800/50 transition">
+          <div class="flex items-center gap-3 min-w-0 flex-1 cursor-pointer" onclick='playItemFromList(${idx})'>
+            <img src="${esc(safeImg(item.image, 'https://placehold.co/120x120/18181b/10b981?text=MA'))}" alt="" class="w-11 h-11 rounded-xl object-cover bg-zinc-200 dark:bg-zinc-800 shrink-0" onerror="this.src='https://placehold.co/120x120/18181b/10b981?text=MA'" />
+            <div class="min-w-0 flex-1">
+              <p class="text-xs font-semibold text-zinc-900 dark:text-zinc-100 truncate group-hover:text-emerald-500 transition">${esc(item.title)}</p>
+              <p class="text-[11px] text-zinc-500 dark:text-zinc-400 truncate mt-0.5">${esc(item.artist || item.subtitle || '')}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-1 shrink-0">
+            ${item.duration ? `<span class="text-[11px] font-mono text-zinc-400 mr-1.5 hidden sm:inline">${formatTime(item.duration)}</span>` : ''}
+            ${!isPlaylist ? `
+              <button type="button" onclick='queueItemFromList(${idx})' title="Thêm vào hàng đợi" class="p-2 rounded-xl text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/70 dark:hover:bg-zinc-700/70 transition">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14"/><path d="M5 12h14"/>
+                </svg>
+              </button>
+            ` : ''}
+            <button type="button" onclick='playItemFromList(${idx})' title="Phát ngay" class="p-2 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500 hover:text-zinc-950 transition">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderAll() {
+      renderZones();
+      renderNowPlaying();
+      renderTabContent();
+    }
+
+    // --- Global Event Handlers for Inline Actions ---
+    window.selectPlayer = function(playerId) {
+      state.selectedPlayerId = playerId;
+      renderAll();
+      if (!state.config.demo && state.config.mode === 'ma') {
+        fetchMAQueue(playerId);
+      }
+    };
+
+    function getCurrentList() {
+      if (state.activeTab === 'queue') return state.queue;
+      if (state.activeTab === 'playlists') return state.playlists;
+      if (state.activeTab === 'albums') return state.albums;
+      if (state.activeTab === 'artists') return state.artists;
+      if (state.activeTab === 'tracks') return state.favorites;
+      return state.searchResults;
+    }
+
+    window.playItemFromList = function(index) {
+      const list = getCurrentList();
+      if (list[index]) {
+        executeCommand('play_media', { item: list[index] });
+      }
+    };
+
+    window.queueItemFromList = function(index) {
+      const list = getCurrentList();
+      if (list[index]) {
+        executeCommand('add_queue', { item: list[index] });
+      }
+    };
+
+    // --- Event Listeners Setup ---
+    function setupEventListeners() {
+      // Theme toggle
+      document.getElementById('btn-theme').addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('ma_controller_theme', isDark ? 'dark' : 'light');
+      });
+
+      // Download Neon App Icon PNG
+      document.getElementById('btn-download-icon').addEventListener('click', downloadAppIconPng);
+      document.getElementById('brand-logo-btn').addEventListener('click', downloadAppIconPng);
+
+      // Refresh button
+      document.getElementById('btn-refresh').addEventListener('click', () => {
+        showToast('Đang làm mới trạng thái thiết bị...', 'info');
+        initConnection();
+      });
+
+      // Transport Controls
+      els.btnPlayPause.addEventListener('click', () => executeCommand('play_pause'));
+      els.btnNext.addEventListener('click', () => executeCommand('next'));
+      els.btnPrev.addEventListener('click', () => executeCommand('previous'));
+      els.btnShuffle.addEventListener('click', () => executeCommand('shuffle'));
+      els.btnRepeat.addEventListener('click', () => executeCommand('repeat'));
+      els.btnMute.addEventListener('click', () => executeCommand('volume_mute'));
+
+      // Seek Slider
+      els.seekSlider.addEventListener('input', (e) => {
+        state.isSeeking = true;
+        const val = Number(e.target.value);
+        const max = Number(e.target.max) || 100;
+        els.timeElapsed.textContent = formatTime(val);
+        els.timeRemaining.textContent = `-${formatTime(Math.max(0, max - val))}`;
+      });
+      els.seekSlider.addEventListener('change', (e) => {
+        state.isSeeking = false;
+        executeCommand('seek', { position: Number(e.target.value) });
+      });
+
+      // Volume Slider
+      els.volumeSlider.addEventListener('input', (e) => {
+        state.isAdjustingVolume = true;
+        els.volumeLabel.textContent = `${e.target.value}%`;
+      });
+      els.volumeSlider.addEventListener('change', (e) => {
+        state.isAdjustingVolume = false;
+        executeCommand('volume_set', { volume: Number(e.target.value) });
+      });
+
+      // Tabs Switching
+      els.tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.activeTab = btn.dataset.tab;
+          els.tabBtns.forEach(b => {
+            const active = b.dataset.tab === state.activeTab;
+            b.className = `tab-btn px-3.5 py-2.5 text-xs rounded-t-xl border-b-2 whitespace-nowrap transition flex items-center gap-1.5 ${
+              active
+                ? 'active font-semibold border-cyan-400 text-cyan-600 dark:text-cyan-400'
+                : 'font-medium border-transparent text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
+            }`;
+          });
+          els.searchBarWrapper.classList.toggle('hidden', state.activeTab !== 'search');
+          if (state.activeTab === 'search') {
+            setTimeout(() => els.searchInput.focus(), 50);
+          }
+          renderTabContent();
+        });
+      });
+
+      // Search Input
+      els.btnSearchSubmit.addEventListener('click', () => performSearch(els.searchInput.value));
+      els.searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') performSearch(els.searchInput.value);
+      });
+
+      // Settings Modal Controls
+      const openModal = () => {
+        els.cfgDemo.checked = state.config.demo;
+        els.cfgMaUrl.value = state.config.maUrl;
+        els.cfgMaToken.value = state.config.maToken || '';
+        els.cfgMaUser.value = state.config.maUser || '';
+        els.cfgMaPass.value = '';
+        els.cfgHaUrl.value = state.config.haUrl;
+        els.cfgHaToken.value = state.config.haToken;
+        updateModalModeUI(state.config.mode);
+        els.settingsModal.classList.remove('hidden');
+        els.settingsModal.classList.add('flex');
+      };
+
+      const closeModal = () => {
+        els.settingsModal.classList.add('hidden');
+        els.settingsModal.classList.remove('flex');
+      };
+
+      document.getElementById('btn-open-settings').addEventListener('click', openModal);
+      document.getElementById('btn-close-settings').addEventListener('click', closeModal);
+      document.getElementById('btn-cancel-settings').addEventListener('click', closeModal);
+
+      els.settingsModal.addEventListener('click', (e) => {
+        if (e.target === els.settingsModal) closeModal();
+      });
+
+      function updateModalModeUI(mode) {
+        els.connModeBtns.forEach(btn => {
+          const isSelected = btn.dataset.connMode === mode;
+          btn.className = `conn-mode-btn px-3 py-2.5 rounded-xl border text-xs font-medium text-left transition ${
+            isSelected
+              ? 'border-cyan-400 bg-cyan-500/10 text-cyan-600 dark:text-cyan-400'
+              : 'border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400'
+          }`;
+        });
+        els.fieldsMa.classList.toggle('hidden', mode !== 'ma');
+        els.fieldsMa.classList.toggle('flex', mode === 'ma');
+        els.fieldsHa.classList.toggle('hidden', mode !== 'ha');
+        els.fieldsHa.classList.toggle('flex', mode === 'ha');
+      }
+
+      els.connModeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.config.mode = btn.dataset.connMode;
+          updateModalModeUI(state.config.mode);
+        });
+      });
+
+      els.settingsForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        state.config.demo = els.cfgDemo.checked;
+        state.config.maUrl = els.cfgMaUrl.value.trim();
+        state.config.haUrl = els.cfgHaUrl.value.trim() || 'ws://homeassistant.local:8123/api/websocket';
+        state.config.haToken = els.cfgHaToken.value.trim();
+        state.config.maToken = els.cfgMaToken.value.trim().replace(/^Bearer\s+/i, '').replace(/\s+/g, '');
+        state.config.maUser = els.cfgMaUser.value.trim();
+        state.maPass = els.cfgMaPass.value;
+        if (state.config.maUser && state.maPass) state.config.maToken = '';
+        saveConfig();
+        closeModal();
+        initConnection();
+      });
+
+      // Live Progress Ticker (ticks smoothly every second when playing)
+      state.progressTimer = setInterval(() => {
+        const player = getActivePlayer();
+        if (player && player.state === 'playing' && !state.isSeeking) {
+          const item = player.current_item;
+          if (item.duration > 0 && item.elapsed < item.duration) {
+            item.elapsed += 1;
+            renderNowPlaying();
+          } else if (state.config.demo && item.duration > 0 && item.elapsed >= item.duration) {
+            executeCommand('next');
+          }
+        }
+      }, 1000);
+    }
+
+    // --- Initialize App ---
+    window.addEventListener('DOMContentLoaded', () => {
+      initAppIconsAndManifest();
+      loadConfig();
+      setupEventListeners();
+      initConnection();
+    });
+  </script>
+</body>
+</html>
